@@ -17,7 +17,7 @@
         />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/namaEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -28,7 +28,7 @@
         android:minHeight="48dp" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/emailEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -39,7 +39,7 @@
         android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/phoneEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -50,7 +50,7 @@
         android:inputType="phone" />
 
     <EditText
-        android:id="@+id/editTextDate"
+        android:id="@+id/tanggalEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -61,7 +61,7 @@
         android:inputType="date" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/numberEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -78,6 +78,7 @@
         android:gravity="end"
         >
         <Button
+            android:id="@+id/simpanButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/simpan"
@@ -86,6 +87,7 @@
             />
 
         <Button
+            android:id="@+id/batalButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/batal"
