@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">211 Android N</string>
+    <string name="contoh_input_text_dan_button">Contoh Input Text dan Button</string>
+    <string name="isi_nama">Isi Nama</string>
+    <string name="simpan">Simpan</string>
+    <string name="batal">Batal</string>
+    <string name="isi_email">Isi Email</string>
+    <string name="isi_nomor_hp">isi Nomor HP</string>
+    <string name="isi_tanggal">Isi Tanggal</string>
+    <string name="isi_angka">Isi Angka</string>
 </resources>

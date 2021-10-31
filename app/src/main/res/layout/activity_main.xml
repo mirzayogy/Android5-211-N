@@ -1,18 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/contoh_input_text_dan_button"
+        android:textSize="24sp"
+        android:textColor="@color/purple_500"
+        android:layout_marginBottom="16dp"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/isi_nama"
+        android:autofillHints="name"
+        android:layout_marginBottom="8dp"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/isi_email"
+        android:minHeight="48dp"
+        android:autofillHints="emailAddress"
+        android:layout_marginBottom="8dp"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/isi_nomor_hp"
+        android:minHeight="48dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints="phone"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/isi_tanggal"
+        android:minHeight="48dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints="creditCardExpirationDate"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/isi_angka"
+        android:minHeight="48dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/simpan"
+            android:backgroundTint="@color/success"
+            android:layout_marginEnd="8dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/batal"
+            android:backgroundTint="@color/danger"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
