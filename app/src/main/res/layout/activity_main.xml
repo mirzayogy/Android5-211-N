@@ -68,7 +68,6 @@
         android:hint="@string/isi_angka"
         android:minHeight="48dp"
         android:layout_marginBottom="8dp"
-        android:autofillHints=""
         android:inputType="number" />
 
     <LinearLayout
@@ -84,6 +83,7 @@
             android:text="@string/simpan"
             android:backgroundTint="@color/success"
             android:layout_marginEnd="8dp"
+            android:drawableLeft="@drawable/ic_baseline_save_24"
             />
 
         <Button
@@ -92,6 +92,7 @@
             android:layout_height="wrap_content"
             android:text="@string/batal"
             android:backgroundTint="@color/danger"
+            android:drawableLeft="@drawable/ic_baseline_cancel_24"
             />
 
     </LinearLayout>
