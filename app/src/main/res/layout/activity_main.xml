@@ -97,5 +97,14 @@
 
     </LinearLayout>
 
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="logout"
+        android:backgroundTint="@color/danger"
+        android:drawableLeft="@drawable/ic_baseline_close_24"
+        />
+
 
 </LinearLayout>

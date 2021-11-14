@@ -8,4 +8,7 @@
     <string name="isi_nomor_hp">isi Nomor HP</string>
     <string name="isi_tanggal">Isi Tanggal</string>
     <string name="isi_angka">Isi Angka</string>
+    <string name="login">LOGIN</string>
+    <string name="isi_username_email">Isi username/email</string>
+    <string name="keluar">Keluar</string>
 </resources>
