@@ -7,64 +7,72 @@
     android:padding="16dp"
     tools:context=".LoginActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/login"
-        android:textSize="24sp"
-        android:textColor="@color/purple_500"
-        android:layout_marginBottom="16dp"
-        />
-
-    <EditText
-        android:id="@+id/usernameEditText"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/isi_username_email"
-        android:autofillHints="emailAddress"
-        android:layout_marginBottom="8dp"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp" />
+        android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/passwordEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Password"
-        android:minHeight="48dp"
-        android:autofillHints="password"
-        android:layout_marginBottom="8dp"
-        android:inputType="textPassword" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/login"
+                android:textColor="@color/purple_500"
+                android:textSize="24sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="end"
-        >
-        <Button
-            android:id="@+id/loginButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/login"
-            android:backgroundTint="@color/success"
-            android:layout_marginEnd="8dp"
-            android:drawableLeft="@drawable/ic_baseline_login_24"
-            />
+            <EditText
+                android:id="@+id/usernameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:autofillHints="emailAddress"
+                android:ems="10"
+                android:hint="@string/isi_username_email"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp" />
 
-        <Button
-            android:id="@+id/keluarButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/keluar"
-            android:backgroundTint="@color/danger"
-            android:drawableLeft="@drawable/ic_baseline_cancel_24"
-            />
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:autofillHints="password"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:minHeight="48dp" />
 
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/loginButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="@color/success"
+                    android:drawableLeft="@drawable/ic_baseline_login_24"
+                    android:text="@string/login" />
+
+                <Button
+                    android:id="@+id/keluarButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/danger"
+                    android:drawableLeft="@drawable/ic_baseline_cancel_24"
+                    android:text="@string/keluar" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
 
 
 </LinearLayout>
